@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+  tools {
+        maven 'MAVEN' // This matches the name in Manage Jenkins → Tools
+    }
     stages {
 
         // ===== FRONTEND BUILD =====
